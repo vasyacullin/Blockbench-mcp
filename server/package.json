@@ -1,0 +1,22 @@
+{
+  "name": "blockbench-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server that lets LLMs drive Blockbench (model, texture, animate, render) through the Blockbench MCP Bridge plugin.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "bin": {
+    "blockbench-mcp-server": "index.js"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}
